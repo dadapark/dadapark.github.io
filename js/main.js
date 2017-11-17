@@ -1,18 +1,43 @@
 var menuOpen = false;
+var wordCount = 0;
+var wordList = ['Hello', 'Bonjour', '안녕하세요','はじめまして'];
+$('#helloWord').css({'display': 'none'});
+$('#helloWord').animate({'opacity':'show'}, 2500);
+
+window.setInterval(function(){
+  $('#helloWord').html(wordList[wordCount]);
+  $('#helloWord').fadeTo(1000,1).delay(500);
+  if (wordCount >= wordList.length - 1){
+    wordCount = 0;
+    console.log(wordCount);
+  } else {
+    wordCount += 1;
+  }
+  $('#helloWord').fadeTo(1000,0.01),{duration:1000};
+}, 2500)
+
 
 $('.trigger').click(function(){
   if (menuOpen == false){
-    $('.menu').animate({'width': '50%', 'minWidth': '300px', 'marginRight': '30px'});
-    $(this).css({'transition': 'transform 0.5s', 'transform': 'rotate(45deg)'});
-    menuOpen = true;
+      menuOpen = true;
+
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        $('.page[value="0"], .page[value="1"], .page[value="2"], .page[value="3"]').hide();
+        $('.menu').animate({'opacity':'1', 'width': '100%'}, 1000);
+        $(this).css({'transition': 'all 1s ease', 'transform': 'rotate(45deg)'});
+
+      } else if(window.matchMedia("(max-width: 1600px)").matches){
+        $('.menu').animate({'opacity':'1', 'width': '20%'},700);
+        $(this).css({'transition': 'all 1s ease', 'transform': 'rotate(45deg)'});
+      }
   } else {
-    $('.menu').animate({'width': '0px', 'minWidth': '0px', 'marginRight': '0px'});
-    $(this).css({'transition': 'transform 0.5s', 'transform': 'rotate(0deg)'});
     menuOpen = false;
+    $('.menu').animate({'width': '0px','opacity':'0'}, 700);
+    $(this).css({'transition': 'all 1s ease', 'transform':'ratate(0deg)'});
   }
 })
 
-$('.page').click(function(){
+$('.page, .menu li').click(function(){
   if (menuOpen == true) {
     $('.trigger').click();
   }
@@ -20,13 +45,25 @@ $('.page').click(function(){
 
 $('.menu li').click(function(){
   var liVal = $(this).attr('value');
-  // $('.trigger').click();
   $('.page').each(function(){
     if (liVal == $(this).attr('value')){
-      $(this).animate({'opacity':'show'}, 1000);
+      $(this).animate({'opacity':'show'}, 1200);
     } else {
       $(this).hide();
     }
   })
 })
-$('.page[value="1"], .page[value="2"], .page[value="3"]').hide()
+
+$('#explore').click(function(){
+ $('.page').each(function(){
+  if($(this).attr('value') == 2){
+    $(this).animate({'opacity':'show'}, 1200);
+  } else {
+    $(this).hide();
+  }
+
+  })
+})
+
+$('.page[value="1"], .page[value="2"], .page[value="3"]').hide();
+

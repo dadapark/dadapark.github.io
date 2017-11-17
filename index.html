@@ -7,58 +7,151 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/main.css">
 
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
   </head>
+
   <body>
-    <video playsinline autoplay muted loop class="backgroundVideo">
-      <source src="img/563399566.mp4" type="video/mp4">
-    </video>
     <header>
       <h2 class="trigger">+</h2>
     </header>
+
     <div class="container">
-      <div class="item menu">
-        <ul>
-          <li value="0"><h2>Flex</h2></li>
-          <li value="1"><h2>About</h2></li>
-          <li value="2"><h2>Works</h2></li>
-          <li value="3"><h2>Contact</h2></li>
-        </ul>
-      </div>
+
       <div class="item content">
-        <div class="page" value="0">
-          <h1>Flex Masters</h1>
+         <div class="page" value="0" id="main">
+          <div id="main_hdiv">
+            <h1 id="helloWord">Hello</h1>
+          </div>
+          <div id="main_con">
+            <img id="propic" src="img/propic.png" width="120px" height="120px"/>
+            <h2>I’m Dada Park</h2>
+            <h5>UI & UX Designer full of creative thoughts</h5>
+          </div>
         </div>
+
+        <!--Content Pages-->
         <div class="page" value="1">
           <h2>About</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Hi,<br>
+          My name is Dada Park, UI & UX Designer based in Toronto.<br>
+          I love designing interactive spaces for variety platforms.<br>
+          Mostly focus on Visual & interactive design, but also interested in development.<br>
+          If you want to reveal the secret of my works, I'd happy to share.
+            <div id="explore"><p>explore >></p></div>
+          </p>
         </div>
+
         <div class="page" value="2">
           <h2>Works</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          <section id='gallery'>
+
+            <div class="gallery_wrap">
+              <img class="gallery_img" src="img/00.png"/>
+              <div class="gallery_hoverwrap">
+                <div class="gallery_titlewrap">
+                  <h2 class="gallery_title">Eros Coffee</h2>
+                  <h5 class="gallery_view">-view-</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_wrap">
+              <img class="gallery_img" src="img/02.png"/>
+              <div class="gallery_hoverwrap">
+                <div class="gallery_titlewrap">
+                  <h2 class="gallery_title">Jazz Fest</h2>
+                  <h5 class="gallery_view">-view-</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_wrap">
+              <img class="gallery_img" src="img/01.png"/>
+              <div class="gallery_hoverwrap">
+                <div class="gallery_titlewrap">
+                  <h2 class="gallery_title">Tori</h2>
+                  <h5 class="gallery_view">-view-</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_wrap">
+              <img class="gallery_img" src="img/03.png"/>
+              <div class="gallery_hoverwrap">
+                <div class="gallery_titlewrap">
+                  <h2 class="gallery_title">Reaching You</h2>
+                  <h5 class="gallery_view">-view-</h5>
+                </div>
+              </div>
+            </div>
+
+<!-- 
+            <div class="gallery_wrap">
+              <img class="gallery_img" src="img/cat05.jpg"/>
+              <div class="gallery_hoverwrap">
+                <div class="gallery_titlewrap">
+                  <h2 class="gallery_title">05</h2>
+                  <h5 class="gallery_view">-view-</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_wrap">
+              <img class="gallery_img" src="img/cat06.jpg"/>
+              <div class="gallery_hoverwrap">
+                <div class="gallery_titlewrap">
+                  <h2 class="gallery_title">06</h2>
+                  <h5 class="gallery_view">-view-</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_wrap">
+              <img class="gallery_img" src="img/cat07.jpg"/>
+              <div class="gallery_hoverwrap">
+                <div class="gallery_titlewrap">
+                  <h2 class="gallery_title">07</h2>
+                  <h5 class="gallery_view">-view-</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_wrap">
+              <img class="gallery_img" src="img/cat08.jpg"/>
+              <div class="gallery_hoverwrap">
+                <div class="gallery_titlewrap">
+                  <h2 class="gallery_title">08</h2>
+                  <h5 class="gallery_view">-view-</h5>
+                </div>
+              </div>
+            </div>
+ -->
+          </section>
         </div>
+
         <div class="page" value="3">
           <h2>Contact</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
+
       </div>
+
+        <div class="item menu">
+          <ul>
+            <li value="0"><h2>Home</h2></li>
+            <li value="1"><h2>About</h2></li>
+            <li value="2"><h2>Works</h2></li>
+            <li value="3"><h2>Contact</h2></li>
+          </ul>
+        </div>
     </div>
-    <footer>
-      <h5>Designed by Rexorious</h5>
-    </footer>
 
-
-
-
-
-
-
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="js/main.js"></script>
   </body>
