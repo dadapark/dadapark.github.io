@@ -1,0 +1,213 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    height: 100%;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.backgroundVideo {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+header {
+  color: white;
+  order: -1;
+  width: 100%;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: Orkney-Medium;
+  user-select: none;
+  cursor: default;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Orkney-Medium;
+  user-select: none;
+  cursor: pointer;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: normal;
+  font-family: Orkney-Medium;
+  user-select: none;
+  cursor: none;
+}
+
+p {
+  font-family: Orkney-Regular;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.trigger {
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg)}
+  to {transform: rotate(360deg)}
+}
+
+.trigger:hover {
+  animation: rotate 4s linear 0s infinite;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 1 0 300px;
+}
+
+.menu {
+  color: #FFF;
+  width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  li {
+    width: calc(100% - 40px);
+    margin: 20px;
+    display: flex;
+    flex: 1 0;
+    align-items: center;
+    justify-content: flex-end;
+    h2 {
+      margin-right: 40px;
+    }
+  }
+}
+
+.content {
+  flex: 1 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h2 {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    cursor: default;
+  }
+}
+
+.page[value="1"], .page[value="2"], .page[value="3"] {
+  width: 50%;
+  min-width: 300px;
+}
+
+@media (max-width: 767px) {
+  .page h1{
+    margin-left: 20px;
+  }
+}
