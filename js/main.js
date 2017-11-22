@@ -63,6 +63,7 @@ $('.menu li').click(function(){
 })
 
 $('#explore').click(function(){
+  $('.container').css({'align-items':'flex-start'});
  $('.page').each(function(){
   if($(this).attr('value') == 2){
     $(this).animate({'opacity':'show'}, 1200);
