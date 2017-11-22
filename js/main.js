@@ -35,7 +35,7 @@ $('.trigger').click(function(){
     menuOpen = false;
     $('.menu').animate({'width': '0px','opacity':'0'}, 700);
     $(this).css({'transition': 'all 1s ease', 'transform':'rotate(0deg)'});
-    $('.page[value="'+liVal+'"]').show();
+    $('.page[value="'+liVal+'"]').animate({'opacity':'show'}, 1200);
   }
 })
 
@@ -75,11 +75,12 @@ $('#explore').click(function(){
 
 $('.trigger').click(function(){
 
-  if(liVal==0 && menuOpen == true){
-    $('.page[value="0"]').animate({'transition': 'all 1s ease', 'left':'-20%'},700);
-  } else if(liVal==0 && menuOpen==false){
-    $('.page[value="0"]').animate({'transition': 'all 1s ease', 'left':'0%'},700);
-  }
+    if(window.matchMedia("(min-width: 769px)").matches && liVal==0 && menuOpen == true){
+      $('.page[value="0"]').animate({'transition': 'all 1s ease', 'left':'-20%'},700);
+    } else if(liVal==0 && menuOpen==false){
+      $('.page[value="0"]').animate({'transition': 'all 1s ease', 'left':'0%'},1200);
+    }
+  
 })
 
 
