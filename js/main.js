@@ -1,5 +1,6 @@
 var menuOpen = false;
 var wordCount = 0;
+var liVal = 0;
 var wordList = ['Hello', 'Bonjour', '안녕하세요','はじめまして'];
 $('#helloWord').css({'display': 'none'});
 $('#helloWord').animate({'opacity':'show'}, 2500);
@@ -9,7 +10,7 @@ window.setInterval(function(){
   $('#helloWord').fadeTo(1000,1).delay(500);
   if (wordCount >= wordList.length - 1){
     wordCount = 0;
-    console.log(wordCount);
+    // console.log(wordCount);
   } else {
     wordCount += 1;
   }
@@ -34,6 +35,7 @@ $('.trigger').click(function(){
     menuOpen = false;
     $('.menu').animate({'width': '0px','opacity':'0'}, 700);
     $(this).css({'transition': 'all 1s ease', 'transform':'ratate(0deg)'});
+    $('.page[value="'+liVal+'"]').show();
   }
 })
 
@@ -44,7 +46,13 @@ $('.page, .menu li').click(function(){
 })
 
 $('.menu li').click(function(){
-  var liVal = $(this).attr('value');
+  liVal = $(this).attr('value');
+
+  if(liVal == 2){
+    $('.container').css({'align-items':'flex-start'});
+  } else {
+    $('.container').css({'align-items':'center'})
+  }
   $('.page').each(function(){
     if (liVal == $(this).attr('value')){
       $(this).animate({'opacity':'show'}, 1200);
@@ -64,6 +72,17 @@ $('#explore').click(function(){
 
   })
 })
+
+$('.trigger').click(function(){
+
+  if(liVal==0 && menuOpen == true){
+    $('.page[value="0"]').animate({'transition': 'all 1s ease', 'left':'-20%'},700);
+  } else if(liVal==0 && menuOpen==false){
+    $('.page[value="0"]').animate({'transition': 'all 1s ease', 'left':'0%'},700);
+  }
+})
+
+
 
 $('.page[value="1"], .page[value="2"], .page[value="3"]').hide();
 
