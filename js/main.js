@@ -34,7 +34,7 @@ $('.trigger').click(function(){
   } else {
     menuOpen = false;
     $('.menu').animate({'width': '0px','opacity':'0'}, 700);
-    $(this).css({'transition': 'all 1s ease', 'transform':'ratate(0deg)'});
+    $(this).css({'transition': 'all 1s ease', 'transform':'rotate(0deg)'});
     $('.page[value="'+liVal+'"]').show();
   }
 })
