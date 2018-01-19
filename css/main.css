@@ -64,6 +64,10 @@ textarea {
 body {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  display: -webkit-flex;
+>>>>>>> parent of 1c5fe28... temp
 =======
   display: -webkit-flex;
 >>>>>>> parent of 1c5fe28... temp
@@ -72,6 +76,7 @@ body {
   margin: 0;
   flex-direction: column;
   justify-content: space-between;
+<<<<<<< HEAD
 <<<<<<< HEAD
   overflow: hidden; }
 
@@ -93,6 +98,8 @@ header {
   justify-content: center;
   align-items: center; }
 =======
+=======
+>>>>>>> parent of 1c5fe28... temp
   -webkit-justify-content: space-between;
   overflow-x: hidden;
   background-color: #F7A3A1;
@@ -111,6 +118,9 @@ header {
   align-items: center;
   -webkit-align-items: center;
 }
+<<<<<<< HEAD
+>>>>>>> parent of 1c5fe28... temp
+=======
 >>>>>>> parent of 1c5fe28... temp
 
 h1 {
@@ -118,6 +128,7 @@ h1 {
   font-weight: bold;
   font-family: Orkney-Medium;
   user-select: none;
+<<<<<<< HEAD
 <<<<<<< HEAD
   cursor: default; }
 
@@ -135,6 +146,8 @@ h5 {
   user-select: none;
   cursor: none; }
 =======
+=======
+>>>>>>> parent of 1c5fe28... temp
   cursor: default;
 }
 
@@ -145,6 +158,7 @@ h2 {
   user-select: none;
   cursor: pointer;
 }
+<<<<<<< HEAD
 
 h5 {
   font-size: 15px;
@@ -208,6 +222,35 @@ footer {
 }
 
 @keyframes rotate {
+=======
+
+h5 {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: Orkney-Medium;
+  user-select: none;
+  cursor: none;
+}
+
+p {
+  font-family: Orkney-Regular;
+  font-size: 20px;
+  line-height: 26px;
+  align-self: left;
+  -webkit-align-self: left;
+}
+
+.trigger {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+@keyframes rotate {
+>>>>>>> parent of 1c5fe28... temp
   from {transform: rotate(0deg)}
   to {transform: rotate(360deg)}
 }
@@ -217,12 +260,16 @@ footer {
 }
 
 .container {
+<<<<<<< HEAD
+>>>>>>> parent of 1c5fe28... temp
+=======
 >>>>>>> parent of 1c5fe28... temp
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
   justify-content: flex-end; }
 
@@ -328,6 +375,69 @@ footer {
   .page h1 {
     margin-left: 20px; } }
 =======
+=======
+  flex: 1 0 300px;
+}
+
+.menu {
+  color: #FFF;
+  width: 0;
+  height: 100vh;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  opacity: 0;
+}
+
+.menu ul {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  align-items: center;
+  -webkit-align-items: center;
+  overflow: hidden;
+}
+
+.menu ul li {
+    width: calc(100% - 40px);
+    margin: 20px;
+    display: flex;
+    display: -webkit-flex;
+    flex: 1 0;
+    align-items: center;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width : 768px){
+  .menu ul li{
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
+}
+
+.content {
+  flex: 1 0;
+  height: 100%;
+  color: white;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+>>>>>>> parent of 1c5fe28... temp
   display: -webkit-flex;
   align-items: center;
   -webkit-align-items: center;
@@ -569,6 +679,9 @@ footer {
   justify-content-items: flex-start;
   -webkit-justify-content: flex-start;
 }
+<<<<<<< HEAD
+>>>>>>> parent of 1c5fe28... temp
+=======
 >>>>>>> parent of 1c5fe28... temp
 
 .page[value="0"]{
