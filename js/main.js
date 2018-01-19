@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // var menuOpen = false;
 
 // $('.trigger').click(function(){
@@ -13,6 +14,8 @@
 //   }
 // })
 =======
+=======
+>>>>>>> parent of 1c5fe28... temp
 var menuOpen = false;
 var wordCount = 0;
 var liVal = 0;
@@ -78,6 +81,10 @@ $('.menu li').click(function(){
 })
 
 $('#explore').click(function(){
+<<<<<<< HEAD
+=======
+  $('.container').css({'align-items':'flex-start'});
+>>>>>>> parent of 1c5fe28... temp
  $('.page').each(function(){
   if($(this).attr('value') == 2){
     $(this).animate({'opacity':'show'}, 1200);
@@ -102,4 +109,7 @@ $('.trigger').click(function(){
 
 $('.page[value="1"], .page[value="2"], .page[value="3"]').hide();
 
+<<<<<<< HEAD
 >>>>>>> parent of 64b2e23... explore
+=======
+>>>>>>> parent of 1c5fe28... temp
