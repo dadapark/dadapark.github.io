@@ -62,6 +62,7 @@ textarea {
    ========================================================================== */
 
 body {
+<<<<<<< HEAD
   display: flex;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -180,12 +181,29 @@ p {
   left: 0;
   margin-left: 20px;
   cursor: pointer; }
+=======
+  background-color: white;
+  height: 100%; }
+
+h1 {
+  font-family: Orkney-Bold;
+  font-size: 50px; }
+
+h2 {
+  font-family: Orkney-Bold;
+  font-size: 32px; }
+
+h3 {
+  font-family: Orkney-Bold;
+  font-size: 26px; }
+>>>>>>> parent of 2668ea1... revertt
 
 @keyframes rotate {
   from {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+<<<<<<< HEAD
 .trigger:hover {
   animation: rotate 4s linear 0s infinite; }
 
@@ -264,6 +282,13 @@ p {
 >>>>>>> parent of 1c5fe28... temp
 =======
 >>>>>>> parent of 1c5fe28... temp
+=======
+header {
+  position: sticky;
+  top: 0;
+  height: 100px;
+  width: 100%;
+>>>>>>> parent of 2668ea1... revertt
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
@@ -272,19 +297,12 @@ p {
 <<<<<<< HEAD
 <<<<<<< HEAD
   justify-content: flex-end; }
-
-.menu ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  overflow: hidden; }
-  .menu ul li {
-    width: calc(100% - 40px);
-    margin: 20px;
+  header .trigger {
+    width: 50px;
+    height: 50px;
     display: flex;
-    flex: 1 0;
     align-items: center;
+<<<<<<< HEAD
     justify-content: flex-end; }
     .menu ul li h2 {
       margin-right: 40px; }
@@ -355,9 +373,20 @@ p {
 >>>>>>> parent of 1c5fe28... temp
 
 .page {
+=======
+    justify-content: center;
+    margin: 20px; }
+    header .trigger :hover {
+      animation: rotate 4s linear 0s infinite; }
+    header .trigger .icon {
+      color: #F7A3A1; }
+
+.main {
+>>>>>>> parent of 2668ea1... revertt
   width: 100%;
-  height: 100%;
+  height: calc(100% - 100px);
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   align-items: center;
   justify-content: center;
@@ -515,6 +544,28 @@ p {
   -moz-animation-delay: 2.5s;
   animation-delay: 2.5s;
 }
+=======
+  flex-direction: row; }
+  .main .content {
+    height: 100%; }
+    .main .content .page1 {
+      color: #F7A3A1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center; }
+  .main .menu {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F7A3A1; }
+    .main .menu li {
+      text-align: right;
+      padding: 20px; }
+>>>>>>> parent of 2668ea1... revertt
 
 #main h1{
   font-size: 45px;
