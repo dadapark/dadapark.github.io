@@ -62,53 +62,13 @@ textarea {
    ========================================================================== */
 
 body {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  display: -webkit-flex;
->>>>>>> parent of 1c5fe28... temp
-=======
-  display: -webkit-flex;
->>>>>>> parent of 1c5fe28... temp
-=======
   display: flex;
   display: -webkit-flex;
->>>>>>> parent of 1c5fe28... temp
   height: 100%;
   width: 100%;
   margin: 0;
   flex-direction: column;
   justify-content: space-between;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  overflow: hidden; }
-
-.backgroundVideo {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1; }
-
-header {
-  color: white;
-  order: -1;
-  width: 100%;
-  display: flex;
-  height: 80px;
-  justify-content: center;
-  align-items: center; }
-=======
-=======
->>>>>>> parent of 1c5fe28... temp
-=======
->>>>>>> parent of 1c5fe28... temp
   -webkit-justify-content: space-between;
   overflow-x: hidden;
   background-color: #F7A3A1;
@@ -127,74 +87,6 @@ header {
   align-items: center;
   -webkit-align-items: center;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 1c5fe28... temp
-=======
->>>>>>> parent of 1c5fe28... temp
-
-h1 {
-  font-size: 100px;
-  font-weight: bold;
-  font-family: Orkney-Medium;
-  user-select: none;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  cursor: default; }
-
-h2 {
-  font-size: 40px;
-  font-weight: bold;
-  font-family: Orkney-Medium;
-  user-select: none;
-  cursor: pointer; }
-
-h5 {
-  font-size: 20px;
-  font-weight: normal;
-  font-family: Orkney-Medium;
-  user-select: none;
-  cursor: none; }
-=======
-=======
->>>>>>> parent of 1c5fe28... temp
-  cursor: default;
-}
-
-h2 {
-  font-size: 25px;
-  font-weight: bold;
-  font-family: Orkney-Medium;
-  user-select: none;
-  cursor: pointer;
-}
-<<<<<<< HEAD
-
-h5 {
-  font-size: 15px;
-  font-weight: normal;
-  font-family: Orkney-Medium;
-  user-select: none;
-  cursor: none;
-}
->>>>>>> parent of 1c5fe28... temp
-
-p {
-  font-family: Orkney-Regular;
-  font-size: 20px;
-<<<<<<< HEAD
-  line-height: 26px; }
-
-.trigger {
-  position: absolute;
-  left: 0;
-  margin-left: 20px;
-  cursor: pointer; }
-=======
-  background-color: white;
-  height: 100%; }
-=======
->>>>>>> parent of 1c5fe28... temp
 
 h1 {
   font-size: 100px;
@@ -220,64 +112,6 @@ h5 {
   cursor: none;
 }
 
-<<<<<<< HEAD
-h3 {
-  font-family: Orkney-Bold;
-  font-size: 26px; }
->>>>>>> parent of 2668ea1... revertt
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-<<<<<<< HEAD
-.trigger:hover {
-  animation: rotate 4s linear 0s infinite; }
-
-footer {
-  color: white;
-  text-align: center;
-  display: flex;
-  height: 60px;
-  justify-content: center;
-  align-items: center; }
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex: 1 0 300px; }
-
-.menu {
-  color: #FFF;
-  width: 0;
-=======
-  line-height: 26px;
-  align-self: left;
-  -webkit-align-self: left;
-}
-
-.trigger {
-  position: absolute;
-  right: 0;
-  margin-right: 20px;
-  top: 20px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-@keyframes rotate {
-=======
-
-h5 {
-  font-size: 15px;
-  font-weight: normal;
-  font-family: Orkney-Medium;
-  user-select: none;
-  cursor: none;
-}
-
 p {
   font-family: Orkney-Regular;
   font-size: 20px;
@@ -296,27 +130,6 @@ p {
 }
 
 @keyframes rotate {
->>>>>>> parent of 1c5fe28... temp
-=======
-p {
-  font-family: Orkney-Regular;
-  font-size: 20px;
-  line-height: 26px;
-  align-self: left;
-  -webkit-align-self: left;
-}
-
-.trigger {
-  position: absolute;
-  right: 0;
-  margin-right: 20px;
-  top: 20px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-@keyframes rotate {
->>>>>>> parent of 1c5fe28... temp
   from {transform: rotate(0deg)}
   to {transform: rotate(360deg)}
 }
@@ -326,192 +139,11 @@ p {
 }
 
 .container {
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 1c5fe28... temp
-=======
->>>>>>> parent of 1c5fe28... temp
-=======
-header {
-  position: sticky;
-  top: 0;
-  height: 100px;
-  width: 100%;
->>>>>>> parent of 2668ea1... revertt
-=======
->>>>>>> parent of 1c5fe28... temp
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  justify-content: flex-end; }
-  header .trigger {
-    width: 50px;
-    height: 50px;
-=======
-  flex: 1 0 300px;
-}
-
-.menu {
-  color: #FFF;
-  width: 0;
-  height: 100vh;
-  display: flex;
-  display: -webkit-flex;
-  align-items: center;
-  -webkit-align-items: center;
-  justify-content: center;
-  -webkit-justify-content: center;
-  opacity: 0;
-}
-
-.menu ul {
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: column;
-  justify-content: space-around;
-  -webkit-justify-content: space-around;
-  align-items: center;
-  -webkit-align-items: center;
-  overflow: hidden;
-}
-
-.menu ul li {
-    width: calc(100% - 40px);
-    margin: 20px;
->>>>>>> parent of 1c5fe28... temp
-    display: flex;
-    display: -webkit-flex;
-    flex: 1 0;
-    align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    justify-content: flex-end; }
-    .menu ul li h2 {
-      margin-right: 40px; }
-
-.content {
-  flex: 1 0;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-=======
-  flex: 1 0 300px;
-}
-
-.menu {
-  color: #FFF;
-  width: 0;
-  height: 100vh;
-  display: flex;
-  display: -webkit-flex;
-  align-items: center;
-  -webkit-align-items: center;
-  justify-content: center;
-  -webkit-justify-content: center;
-  opacity: 0;
-}
-
-.menu ul {
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: column;
-  justify-content: space-around;
-  -webkit-justify-content: space-around;
-  align-items: center;
-  -webkit-align-items: center;
-  overflow: hidden;
-}
-
-.menu ul li {
-    width: calc(100% - 40px);
-    margin: 20px;
-    display: flex;
-    display: -webkit-flex;
-    flex: 1 0;
-    align-items: center;
-=======
->>>>>>> parent of 1c5fe28... temp
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-}
-
-@media only screen and (max-width : 768px){
-  .menu ul li{
-<<<<<<< HEAD
-    justify-content: center;
-    -webkit-justify-content: center;
-  }
-}
-
-.content {
-  flex: 1 0;
-  height: 100%;
-  color: white;
-  display: flex;
-  display: -webkit-flex;
-  align-items: center;
-  -webkit-align-items: center;
-  justify-content: center;
-  -webkit-justify-content: center;
-}
->>>>>>> parent of 1c5fe28... temp
-
-.page {
-=======
-=======
->>>>>>> parent of 1c5fe28... temp
-    justify-content: center;
-    -webkit-justify-content: center;
-  }
-}
-
-<<<<<<< HEAD
-.main {
->>>>>>> parent of 2668ea1... revertt
-=======
-.content {
-  flex: 1 0;
-  height: 100%;
-  color: white;
-  display: flex;
-  display: -webkit-flex;
-  align-items: center;
-  -webkit-align-items: center;
-  justify-content: center;
-  -webkit-justify-content: center;
-}
-
-.page {
->>>>>>> parent of 1c5fe28... temp
-  width: 100%;
-  height: 100%;
-  display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-  .page h2 {
-    align-self: flex-start;
-    margin-bottom: 20px;
-    cursor: default; }
-
-.page[value="1"], .page[value="2"], .page[value="3"] {
-  width: 50%;
-  min-width: 300px; }
-
-@media (max-width: 767px) {
-  .page h1 {
-    margin-left: 20px; } }
-=======
-=======
   flex: 1 0 300px;
 }
 
@@ -573,9 +205,6 @@ header {
   width: 100%;
   height: 100%;
   display: flex;
->>>>>>> parent of 1c5fe28... temp
-=======
->>>>>>> parent of 1c5fe28... temp
   display: -webkit-flex;
   align-items: center;
   -webkit-align-items: center;
@@ -653,31 +282,6 @@ header {
   -moz-animation-delay: 2.5s;
   animation-delay: 2.5s;
 }
-<<<<<<< HEAD
-=======
-  flex-direction: row; }
-  .main .content {
-    height: 100%; }
-    .main .content .page1 {
-      color: #F7A3A1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center; }
-  .main .menu {
-    height: 100%;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #F7A3A1; }
-    .main .menu li {
-      text-align: right;
-      padding: 20px; }
->>>>>>> parent of 2668ea1... revertt
-=======
->>>>>>> parent of 1c5fe28... temp
 
 #main h1{
   font-size: 45px;
@@ -842,13 +446,6 @@ header {
   justify-content-items: flex-start;
   -webkit-justify-content: flex-start;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 1c5fe28... temp
-=======
->>>>>>> parent of 1c5fe28... temp
-=======
->>>>>>> parent of 1c5fe28... temp
 
 .page[value="0"]{
   position: absolute;

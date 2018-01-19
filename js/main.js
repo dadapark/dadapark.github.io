@@ -1,36 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 2668ea1... revertt
-// var menuOpen = false;
-
-// $('.trigger').click(function(){
-//   if (menuOpen) {
-//     $('.content').animate({'width': '100%'})
-//     $('.menu').animate({'width': '0'})
-//     menuOpen = false;
-//   } else {
-//     $('.content').animate({'width': '80%'})
-//     $('.menu').animate({'width': '20%'})
-//     menuOpen = true;
-//   }
-// })
-=======
-<<<<<<< HEAD
-=======
->>>>>>> parent of 1c5fe28... temp
-=======
->>>>>>> parent of 1c5fe28... temp
-=======
->>>>>>> parent of 1c5fe28... temp
-=======
->>>>>>> parent of 2668ea1... revertt
-=======
->>>>>>> parent of 1c5fe28... temp
 var menuOpen = false;
 var wordCount = 0;
 var liVal = 0;
@@ -67,8 +34,8 @@ $('.trigger').click(function(){
   } else {
     menuOpen = false;
     $('.menu').animate({'width': '0px','opacity':'0'}, 700);
-    $(this).css({'transition': 'all 1s ease', 'transform':'rotate(0deg)'});
-    $('.page[value="'+liVal+'"]').animate({'opacity':'show'}, 1200);
+    $(this).css({'transition': 'all 1s ease', 'transform':'ratate(0deg)'});
+    $('.page[value="'+liVal+'"]').show();
   }
 })
 
@@ -96,25 +63,6 @@ $('.menu li').click(function(){
 })
 
 $('#explore').click(function(){
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  $('.container').css({'align-items':'flex-start'});
->>>>>>> parent of 1c5fe28... temp
-=======
-  $('.container').css({'align-items':'flex-start'});
->>>>>>> parent of 1c5fe28... temp
-=======
-  $('.container').css({'align-items':'flex-start'});
->>>>>>> parent of 1c5fe28... temp
-=======
->>>>>>> parent of 2668ea1... revertt
-=======
-  $('.container').css({'align-items':'flex-start'});
->>>>>>> parent of 1c5fe28... temp
  $('.page').each(function(){
   if($(this).attr('value') == 2){
     $(this).animate({'opacity':'show'}, 1200);
@@ -127,32 +75,14 @@ $('#explore').click(function(){
 
 $('.trigger').click(function(){
 
-    if(window.matchMedia("(min-width: 769px)").matches && liVal==0 && menuOpen == true){
-      $('.page[value="0"]').animate({'transition': 'all 1s ease', 'left':'-20%'},700);
-    } else if(liVal==0 && menuOpen==false){
-      $('.page[value="0"]').animate({'transition': 'all 1s ease', 'left':'0%'},1200);
-    }
-  
+  if(liVal==0 && menuOpen == true){
+    $('.page[value="0"]').animate({'transition': 'all 1s ease', 'left':'-20%'},700);
+  } else if(liVal==0 && menuOpen==false){
+    $('.page[value="0"]').animate({'transition': 'all 1s ease', 'left':'0%'},700);
+  }
 })
 
 
 
 $('.page[value="1"], .page[value="2"], .page[value="3"]').hide();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 64b2e23... explore
-=======
->>>>>>> parent of 1c5fe28... temp
-=======
->>>>>>> parent of 1c5fe28... temp
-=======
->>>>>>> parent of 1c5fe28... temp
-=======
->>>>>>> parent of 64b2e23... explore
->>>>>>> parent of 2668ea1... revertt
-=======
->>>>>>> parent of 1c5fe28... temp
