@@ -63,6 +63,7 @@ textarea {
 
 body {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -72,11 +73,16 @@ body {
 =======
   display: -webkit-flex;
 >>>>>>> parent of 1c5fe28... temp
+=======
+  display: flex;
+  display: -webkit-flex;
+>>>>>>> parent of 1c5fe28... temp
   height: 100%;
   width: 100%;
   margin: 0;
   flex-direction: column;
   justify-content: space-between;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   overflow: hidden; }
@@ -101,6 +107,8 @@ header {
 =======
 =======
 >>>>>>> parent of 1c5fe28... temp
+=======
+>>>>>>> parent of 1c5fe28... temp
   -webkit-justify-content: space-between;
   overflow-x: hidden;
   background-color: #F7A3A1;
@@ -119,6 +127,7 @@ header {
   align-items: center;
   -webkit-align-items: center;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> parent of 1c5fe28... temp
 =======
@@ -184,15 +193,34 @@ p {
 =======
   background-color: white;
   height: 100%; }
+=======
+>>>>>>> parent of 1c5fe28... temp
 
 h1 {
-  font-family: Orkney-Bold;
-  font-size: 50px; }
+  font-size: 100px;
+  font-weight: bold;
+  font-family: Orkney-Medium;
+  user-select: none;
+  cursor: default;
+}
 
 h2 {
-  font-family: Orkney-Bold;
-  font-size: 32px; }
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Orkney-Medium;
+  user-select: none;
+  cursor: pointer;
+}
 
+h5 {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: Orkney-Medium;
+  user-select: none;
+  cursor: none;
+}
+
+<<<<<<< HEAD
 h3 {
   font-family: Orkney-Bold;
   font-size: 26px; }
@@ -269,6 +297,26 @@ p {
 
 @keyframes rotate {
 >>>>>>> parent of 1c5fe28... temp
+=======
+p {
+  font-family: Orkney-Regular;
+  font-size: 20px;
+  line-height: 26px;
+  align-self: left;
+  -webkit-align-self: left;
+}
+
+.trigger {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+@keyframes rotate {
+>>>>>>> parent of 1c5fe28... temp
   from {transform: rotate(0deg)}
   to {transform: rotate(360deg)}
 }
@@ -278,6 +326,7 @@ p {
 }
 
 .container {
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> parent of 1c5fe28... temp
 =======
@@ -289,6 +338,8 @@ header {
   height: 100px;
   width: 100%;
 >>>>>>> parent of 2668ea1... revertt
+=======
+>>>>>>> parent of 1c5fe28... temp
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
@@ -296,12 +347,48 @@ header {
   align-items: center;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   justify-content: flex-end; }
   header .trigger {
     width: 50px;
     height: 50px;
+=======
+  flex: 1 0 300px;
+}
+
+.menu {
+  color: #FFF;
+  width: 0;
+  height: 100vh;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  opacity: 0;
+}
+
+.menu ul {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  align-items: center;
+  -webkit-align-items: center;
+  overflow: hidden;
+}
+
+.menu ul li {
+    width: calc(100% - 40px);
+    margin: 20px;
+>>>>>>> parent of 1c5fe28... temp
     display: flex;
+    display: -webkit-flex;
+    flex: 1 0;
     align-items: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
     justify-content: flex-end; }
     .menu ul li h2 {
@@ -348,12 +435,15 @@ header {
     display: -webkit-flex;
     flex: 1 0;
     align-items: center;
+=======
+>>>>>>> parent of 1c5fe28... temp
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
 }
 
 @media only screen and (max-width : 768px){
   .menu ul li{
+<<<<<<< HEAD
     justify-content: center;
     -webkit-justify-content: center;
   }
@@ -374,18 +464,35 @@ header {
 
 .page {
 =======
+=======
+>>>>>>> parent of 1c5fe28... temp
     justify-content: center;
-    margin: 20px; }
-    header .trigger :hover {
-      animation: rotate 4s linear 0s infinite; }
-    header .trigger .icon {
-      color: #F7A3A1; }
+    -webkit-justify-content: center;
+  }
+}
 
+<<<<<<< HEAD
 .main {
 >>>>>>> parent of 2668ea1... revertt
-  width: 100%;
-  height: calc(100% - 100px);
+=======
+.content {
+  flex: 1 0;
+  height: 100%;
+  color: white;
   display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.page {
+>>>>>>> parent of 1c5fe28... temp
+  width: 100%;
+  height: 100%;
+  display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   align-items: center;
@@ -467,6 +574,8 @@ header {
   height: 100%;
   display: flex;
 >>>>>>> parent of 1c5fe28... temp
+=======
+>>>>>>> parent of 1c5fe28... temp
   display: -webkit-flex;
   align-items: center;
   -webkit-align-items: center;
@@ -544,6 +653,7 @@ header {
   -moz-animation-delay: 2.5s;
   animation-delay: 2.5s;
 }
+<<<<<<< HEAD
 =======
   flex-direction: row; }
   .main .content {
@@ -566,6 +676,8 @@ header {
       text-align: right;
       padding: 20px; }
 >>>>>>> parent of 2668ea1... revertt
+=======
+>>>>>>> parent of 1c5fe28... temp
 
 #main h1{
   font-size: 45px;
@@ -731,6 +843,9 @@ header {
   -webkit-justify-content: flex-start;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 1c5fe28... temp
+=======
 >>>>>>> parent of 1c5fe28... temp
 =======
 >>>>>>> parent of 1c5fe28... temp
