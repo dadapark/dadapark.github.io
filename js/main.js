@@ -29,7 +29,7 @@ $('.trigger').click(function(){
         $('.menu').animate({'opacity':'1', 'width': '100%'}, 1000);
         $(this).css({'transition': 'all 1s ease', 'transform': 'rotate(45deg)'});
 
-      } else if(window.matchMedia("(max-width: 1600px)").matches){
+      } else {
         $('.menu').animate({'opacity':'1', 'width': '20%'},700);
         $(this).css({'transition': 'all 1s ease', 'transform': 'rotate(45deg)'});
       }

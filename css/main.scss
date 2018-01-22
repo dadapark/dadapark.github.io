@@ -72,6 +72,7 @@ body {
   -webkit-justify-content: space-between;
   overflow-x: hidden;
   background-color: white;
+  align-items: center;
 }
 
 header {
@@ -144,6 +145,8 @@ p {
   justify-content: center;
   align-items: center;
   flex: 1 0 300px;
+  max-width: 1600px;
+  width: 100%;
 }
 
 .menu {
@@ -357,16 +360,16 @@ p {
 }
 
 
-@media only screen and (max-width : 1600px){
+@media only screen and (min-width : 769px){
   #gallery{
-    width: 100%;
+    width: 100%; 
     line-height: 0;
     -webkit-column-count: 2;
     -webkit-column-gap:   0px;
     -moz-column-count:    2;
     -moz-column-gap:      0px;
     column-count:         2;
-    column-gap:           0px;  
+    column-gap:           0px; 
   }
 }
 @media only screen and (max-width : 768px){

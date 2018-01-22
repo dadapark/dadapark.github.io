@@ -59,7 +59,8 @@ body {
   justify-content: space-between;
   -webkit-justify-content: space-between;
   overflow-x: hidden;
-  background-color: white; }
+  background-color: white;
+  align-items: center; }
 
 header {
   color: #F7A3A1;
@@ -123,7 +124,9 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex: 1 0 300px; }
+  flex: 1 0 300px;
+  max-width: 1600px;
+  width: 100%; }
 
 .menu {
   color: #F7A3A1;
@@ -320,7 +323,7 @@ p {
 #explore p {
   font-size: 18px; }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (min-width: 769px) {
   #gallery {
     width: 100%;
     line-height: 0;
