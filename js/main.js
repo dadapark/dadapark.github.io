@@ -1,6 +1,8 @@
 var menuOpen = false;
+var modalOpen = false;
 var wordCount = 0;
 var liVal = 0;
+var wrapNum;
 var wordList = ['Hello', 'Bonjour', '안녕하세요','はじめまして'];
 $('#helloWord').css({'display': 'none'});
 $('#helloWord').animate({'opacity':'show'}, 2500);
@@ -19,7 +21,7 @@ window.setInterval(function(){
 
 
 $('.trigger').click(function(){
-  if (menuOpen == false){
+  if (!menuOpen && !modalOpen){
       menuOpen = true;
 
       if (window.matchMedia("(max-width: 768px)").matches) {
@@ -66,6 +68,7 @@ $('#explore').click(function(){
  $('.page').each(function(){
   if($(this).attr('value') == 2){
     $(this).animate({'opacity':'show'}, 1200);
+    liVal = 2;
   } else {
     $(this).hide();
   }
@@ -74,14 +77,24 @@ $('#explore').click(function(){
 })
 
 $('.trigger').click(function(){
-
-  if(liVal==0 && menuOpen == true){
+  if (modalOpen){
+    $('.modal').hide();
+    $('.modal_wrap[value='+ wrapNum +']').hide(500);
+    modalOpen = false;
+  } else if (liVal==0 && menuOpen){
     $('.page[value="0"]').animate({'transition': 'all 1s ease', 'left':'-20%'},700);
   } else if(liVal==0 && menuOpen==false){
     $('.page[value="0"]').animate({'transition': 'all 1s ease', 'left':'0%'},700);
   }
 })
 
+$('.gallery_wrap').click(function(){
+  wrapNum = $(this).attr('value');
+  console.log(wrapNum);
+  $('.modal').show();
+  $('.modal_wrap[value='+ wrapNum +']').show(500);
+  modalOpen = true;
+})
 
 
 $('.page[value="1"], .page[value="2"], .page[value="3"]').hide();
