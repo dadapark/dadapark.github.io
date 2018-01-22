@@ -11,7 +11,7 @@ function adjustLeftWidth(modal_wrap) {
   var parentWidth = $(modal_wrap).width();    
   if (window.matchMedia("(min-width: 769px)").matches) {
     $(".left").width(parseInt(parentWidth) * 0.3);
-    $(".left").animate({'opacity': '1'}, 'fast');
+    $(".left").animate({'opacity': '1'}, 'slow');
   } else {
     $(".left").width('100%');
   }
@@ -67,7 +67,7 @@ $('.menu li').click(function(){
   }
   $('.page').each(function(){
     if (liVal == $(this).attr('value')){
-      $(this).animate({'opacity':'show'}, 1200);
+      $(this).animate({'opacity':'show'}, 'slow');
     } else {
       $(this).hide();
     }
@@ -88,7 +88,7 @@ $('#explore').click(function(){
 
 $('.trigger').click(function(){
   if (modalOpen){
-    $('.modal').hide('fast');
+    $('.modal').hide('slow');
     $('.list').show('slow');
     $('.modal_wrap[value='+ wrapNum +']').hide(500);
     modalOpen = false;
@@ -101,7 +101,7 @@ $('.trigger').click(function(){
 
 $('.gallery_wrap').click(function(){
   wrapNum = $(this).attr('value');
-  $('.list').hide('fast');
+  $('.list').hide('slow');
   $('.modal').show('slow');
   var openedModal = $('.modal_wrap[value='+ wrapNum +']');
   $(openedModal).show(500, function(){
