@@ -36,7 +36,7 @@ $('.trigger').click(function(){
   } else {
     menuOpen = false;
     $('.menu').animate({'width': '0px','opacity':'0'}, 700);
-    $(this).css({'transition': 'all 1s ease', 'transform':'ratate(0deg)'});
+    $(this).css({'transition': 'all 1s ease', 'transform':'rotate(0deg)'});
     $('.page[value="'+liVal+'"]').show();
   }
 })
@@ -78,7 +78,8 @@ $('#explore').click(function(){
 
 $('.trigger').click(function(){
   if (modalOpen){
-    $('.modal').hide();
+    $('.modal').hide('fast');
+    $('.list').show('slow');
     $('.modal_wrap[value='+ wrapNum +']').hide(500);
     modalOpen = false;
   } else if (liVal==0 && menuOpen){
@@ -90,9 +91,10 @@ $('.trigger').click(function(){
 
 $('.gallery_wrap').click(function(){
   wrapNum = $(this).attr('value');
-  console.log(wrapNum);
-  $('.modal').show();
+  $('.list').hide('fast');
+  $('.modal').show('slow');
   $('.modal_wrap[value='+ wrapNum +']').show(500);
+  $('.trigger').css({'transition': 'all 1s ease', 'transform':'rotate(45deg)'});
   modalOpen = true;
 })
 
