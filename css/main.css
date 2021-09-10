@@ -1,0 +1,227 @@
+html, body {
+    font-family: rubik;
+    font-size: 12px;
+    color: #606060;
+}
+
+body.dp {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 6rem;
+    margin-bottom: 14px;
+}
+
+h2 {
+    font-size: 3.4rem;
+    font-weight: 500;
+    line-height: 4rem;
+    margin-bottom: 3px;
+}
+
+h3 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 3.2rem;
+    margin-bottom: 25px;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+}
+
+h5 {
+    font-size: 1.67rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+h6 {
+    font-size: 1.33rem;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 1.67rem;
+    font-weight: 500;
+    line-height: 2.67rem;
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #92CCF1;
+    display: flex;
+    z-index: 999999;
+}
+
+header h4 {
+    margin: 10px 32px;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.dp-main {
+    max-width: 1110px;
+    margin: 175px 32px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.dp-cta {
+    align-self: flex-start;
+    background-color: #92CCF1;
+    color: #FFF;
+    padding: 18px 24px;
+    border-radius: 8px 8px;
+    margin: 27px 0;
+}
+
+.dp-cta h4 {
+    display: inline-block;
+}
+
+.dp-component {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.dp-carousel-header {
+    margin-bottom: 54px;
+}
+
+.dp-carousel-nav {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 33px;
+    position: relative;
+}
+
+.dp-carousel-nav > * {
+    display: flex;
+    padding: 0 55px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    cursor: pointer;
+}
+
+.dp-carousel-nav > * img {
+    width: 80px;
+    margin-bottom: 13px;
+}
+
+.dp-carousel-navbar {
+    border-bottom: 4px solid;
+    border-bottom-color: hsl(203, 77%, 76%);
+    position: relative;
+    will-change: transform, border-bottom-color;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+.dp-carousel-navbar-circle {
+    width: 16px;
+    height: 16px;
+    border: 12px solid #FFF;
+    border-radius: 50% 50%;
+    background-color: #92CCF1;
+    position: absolute;
+    top: -18px;
+    will-change: transform, background-color;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+.dp-carousel-navbar.navbar-red {
+    border-bottom-color: #F58989;
+}
+
+.dp-carousel-navbar.navbar-red .dp-carousel-navbar-circle {
+    background-color: #F58989;
+}
+
+.dp-carousel-navbar.navbar-yellow {
+    border-bottom-color: #F2D261;
+}
+
+.dp-carousel-navbar.navbar-yellow .dp-carousel-navbar-circle {
+    background-color: #F2D261;
+}
+
+
+.dp-carousel-present {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.dp-carousel-board {
+    display: flex;
+    overflow: hidden;
+    width: 300%;
+    align-items: flex-start;
+    will-change: transform;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+.dp-carousel-board > * {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.dp-width__2 > * {
+    width: calc(50% - 30px);
+    padding-top: calc(40% - 30px);
+}
+
+.dp-width__3 > * {
+    width: calc(100%/3 - 30px);
+    padding-top: calc(100%/3 - 30px);
+}
+
+.dp-carousel-board-item {
+    background-color: #FCBF49;
+    border-radius: 20px 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.dp-carousel-board-item img {
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.dp-width__2 .dp-carousel-board-item img {
+    width: 100%;
+    max-width: 150px;
+}

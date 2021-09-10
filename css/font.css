@@ -1,29 +1,135 @@
 @font-face {
-  font-family: agencyFB;
-  src: url(fonts/AgencyFB.ttf);
+  font-family: newyork;
+  src: url(../font/NewYorkSmall-semibold.ttf) format("ttf");
 }
 
 @font-face {
-  font-family: Orkney-Bold;
-  src: url(fonts/Orkney-Bold.otf);
+  font-family: rubik;
+  src: url(../font/Rubik-VariableFont_wght.ttf) format("ttf");
 }
 
 @font-face {
-  font-family: Orkney-Light;
-  src: url(fonts/Orkney-Light.otf);
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-Black.otf);
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: Orkney-Medium;
-  src: url(fonts/Orkney-Medium.otf);
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-BlackItalic.otf);
+  font-weight: 900;
+  font-style: italic;
 }
 
 @font-face {
-  font-family: Orkney-Regular;
-  src: url(fonts/Orkney-Regular.otf);
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-Bold.otf);
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: Openas;
-  src: url(fonts/Openas.ttf);
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-BoldItalic.otf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-Heavy.otf);
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-HeavyItalic.otf);
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-Light.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-LightItalic.otf);
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-Medium.otf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-MediumItalic.otf);
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-RegularItalic.otf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-Semibold.otf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-SemiboldItalic.otf);
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-Thin.otf);
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-ThinItalic.otf);
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-Ultralight.otf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: sf-pro;
+  src: url(../font/SF-Pro-Text-UltralightItalic.otf);
+  font-weight: 100;
+  font-style: italic;
 }
