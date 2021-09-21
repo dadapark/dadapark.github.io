@@ -7,6 +7,13 @@ html, body {
 body.dp {
     display: flex;
     justify-content: center;
+    position: relative;
+}
+
+body.dp-lock {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
 }
 
 h1 {
@@ -243,4 +250,29 @@ header h4 {
 .dp-banner {
     display: flex;
     flex-direction: column;
+}
+
+.dp-modal {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFF;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.dp-modal-show {
+    display: flex;
+}
+
+.dp-modal-content {
+    margin: 80px 160px;
+    flex: 1;
+}
+
+.dp-modal-close {
+    width: auto;
+    justify-self: flex-end;
 }

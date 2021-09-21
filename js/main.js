@@ -1,7 +1,10 @@
 const navButtons = document.querySelectorAll("[class^=dp-carousel-nav__]");
 const currentCarousel = document.getElementsByClassName("dp-carousel-board")[0];
 const colorButton = document.getElementsByClassName("dp-carousel-navbar-circle")[0];
+const modalButtons = document.querySelectorAll("div.dp-carousel-board-item");
 const colorLine = (colorButton ? colorButton.parentElement : false);
+const bodyContent = document.getElementsByTagName('body')[0];
+const modal = document.getElementsByClassName('dp-modal')[0];
 
 // (i, int)
 const switchCarousel = (i) => {
@@ -20,8 +23,7 @@ const switchNav = (button, i) => {
     }
 
     colorButton.style.transform = "translateX(" + (button.offsetLeft + (button.clientWidth/2) - 20) + "px)";
-}
-
+};
 
 
 [...navButtons].forEach((navButton) => {
@@ -31,7 +33,17 @@ const switchNav = (button, i) => {
         switchNav(navButton, targetInt);
         switchCarousel(targetInt);
     })
+});
+
+[...modalButtons].forEach((modalButton) => {
+    modalButton.addEventListener('click',
+    () => {
+        bodyContent.classList.toggle('dp-lock');
+        modal.classList.toggle('dp-modal-show');
+    })
 })
+
+
 
 
 window.onload = () => {
