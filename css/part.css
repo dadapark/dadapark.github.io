@@ -91,6 +91,14 @@
     padding: 30px;
 }
 
+.dp-box:first-of-type {
+    margin-left: 0;
+}
+
+.dp-box:last-of-type {
+    margin-right: 0;
+}
+
 .dp-text h5 {
     font-weight: 400;
 }
