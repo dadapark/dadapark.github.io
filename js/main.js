@@ -43,12 +43,14 @@ let imgComp = document.createElement('img');
 [...modalButtons].forEach((modalButton) => {
     modalButton.addEventListener('click',
     () => {
-        imgComp.src =  modalButton.firstChild.src
-        modalImage.appendChild(imgComp);
+        if (modalButton.firstChild) {
+            imgComp.src =  modalButton.firstChild.src;
+            modalImage.appendChild(imgComp);
 
-        bodyContent.classList.toggle('dp-lock');
-        modal.classList.toggle('dp-modal-show');
-        headContent.classList.toggle('header-hide');
+            bodyContent.classList.toggle('dp-lock');
+            modal.classList.toggle('dp-modal-show');
+            headContent.classList.toggle('header-hide');
+        }
     })
 });
 

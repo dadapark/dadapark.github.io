@@ -231,6 +231,7 @@ header h4 {
     margin: 15px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .dp-carousel-board-item img {
@@ -261,6 +262,7 @@ header h4 {
     display: none;
     margin: 0 160px;
     flex-direction: column;
+    opacity: 95%;
 }
 
 .dp-modal-show {
@@ -289,10 +291,4 @@ header h4 {
 
 header.header-hide {
     display: none;
-}
-
-.dp-modal-content-prev, .dp-modal-content-next {
-    color: #92CCF1;
-    font-size: 32px;
-    cursor: pointer;
 }
