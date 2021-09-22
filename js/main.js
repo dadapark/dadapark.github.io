@@ -4,7 +4,10 @@ const colorButton = document.getElementsByClassName("dp-carousel-navbar-circle")
 const modalButtons = document.querySelectorAll("div.dp-carousel-board-item");
 const colorLine = (colorButton ? colorButton.parentElement : false);
 const bodyContent = document.getElementsByTagName('body')[0];
+const headContent = document.getElementsByTagName('header')[0];
 const modal = document.getElementsByClassName('dp-modal')[0];
+const modalClose = document.getElementsByClassName('dp-modal-close');
+const modalImage = document.getElementById('dp-modal-img');
 
 // (i, int)
 const switchCarousel = (i) => {
@@ -25,7 +28,6 @@ const switchNav = (button, i) => {
     colorButton.style.transform = "translateX(" + (button.offsetLeft + (button.clientWidth/2) - 20) + "px)";
 };
 
-
 [...navButtons].forEach((navButton) => {
     navButton.addEventListener('click',
     () => {
@@ -35,13 +37,31 @@ const switchNav = (button, i) => {
     })
 });
 
+
+let imgComp = document.createElement('img');
+
 [...modalButtons].forEach((modalButton) => {
     modalButton.addEventListener('click',
     () => {
+        imgComp.src =  modalButton.firstChild.src
+        modalImage.appendChild(imgComp);
+
         bodyContent.classList.toggle('dp-lock');
         modal.classList.toggle('dp-modal-show');
+        headContent.classList.toggle('header-hide');
     })
-})
+});
+
+[...modalClose].forEach((closeButton) => {
+    closeButton.addEventListener('click',
+    () => {
+        modalImage.removeChild(imgComp);
+
+        bodyContent.classList.toggle('dp-lock');
+        modal.classList.toggle('dp-modal-show');
+        headContent.classList.toggle('header-hide');
+    })
+});
 
 
 
