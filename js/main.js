@@ -44,7 +44,8 @@ let imgComp = document.createElement('img');
     modalButton.addEventListener('click',
     () => {
         if (modalButton.firstChild) {
-            imgComp.src = modalButton.firstChild.src.replace('thumb', 'original');
+            imgComp.src = modalButton.firstChild.src.replace('thumb', 'original').replace('.gif', '.webp');
+            
             modalImage.appendChild(imgComp);
 
             bodyContent.classList.toggle('dp-lock');
