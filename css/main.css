@@ -262,10 +262,25 @@ header h4 {
     display: none;
     margin: 0 160px;
     flex-direction: column;
+    opacity: 0;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .dp-modal-show {
     display: flex;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.3s;
 }
 
 .dp-modal-content {
