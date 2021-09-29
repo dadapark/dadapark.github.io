@@ -8,6 +8,7 @@ body.dp {
     display: flex;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 
 body.dp-lock {
