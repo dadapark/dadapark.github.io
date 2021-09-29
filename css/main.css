@@ -8,7 +8,12 @@ body.dp {
     display: flex;
     justify-content: center;
     position: relative;
-    overflow: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 body.dp-lock {
