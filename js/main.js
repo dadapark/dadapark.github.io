@@ -1,7 +1,7 @@
 const navButtons = document.querySelectorAll("[class^=dp-carousel-nav__]");
 const currentCarousel = document.getElementsByClassName("dp-carousel-board")[0];
 const colorButton = document.getElementsByClassName("dp-carousel-navbar-circle")[0];
-const modalButtons = document.querySelectorAll("div.dp-carousel-board-item");
+const modalButtons = document.querySelectorAll("div.dp-carousel-board-item:not(.item-lock)");
 const colorLine = (colorButton ? colorButton.parentElement : false);
 const bodyContent = document.getElementsByTagName('body')[0];
 const headContent = document.getElementsByTagName('header')[0];

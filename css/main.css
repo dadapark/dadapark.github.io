@@ -234,18 +234,57 @@ header h4 {
     cursor: pointer;
 }
 
+.dp-carousel-board-item.item-lock {
+    cursor: unset;
+}
+
+.dp-carousel-board-item:after {
+    content: " ";
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dp-carousel-board-item:not(.item-lock):hover:after {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
 .dp-carousel-board-item img {
     position: absolute;
-    z-index: 9999;
+    z-index: 99;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dp-carousel-board-item:hover img {
+    transform: translate(-50%, -50%) scale(110%, 110%);
 }
 
 .dp-width__2 .dp-carousel-board-item img {
-    width: 100%;
-    max-width: 150px;
+    height: 100%;
+}
+
+.dp-carousel-board-item h4 {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    color: #FFF;
+    margin: 24px;
+    font-weight: 500;
+}
+
+.dp-carousel-board-item.item-lock h4::after {
+    content: url('../img/ux/lock-icon.png');
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .dp-banner {
