@@ -12,7 +12,16 @@ const modalImage = document.getElementById('dp-modal-img');
 // (i, int)
 const switchCarousel = (i) => {
     targetCarousel = document.getElementsByClassName("dp-carousel-board__" + i)[0]
-    currentCarousel.style.transform = "translateX(-" + targetCarousel.offsetLeft + "px)"
+    currentCarousel.style.transform = "translateX(-" + targetCarousel.offsetLeft + "px)";
+
+    [...currentCarousel.children].forEach((carousel) => {
+        if (carousel == targetCarousel) {
+            carousel.classList.add('board-fullheight');
+        } else {
+            carousel.classList.remove('board-fullheight');
+        }
+    })
+    
 }
 
 // (button, elm), (i, int)

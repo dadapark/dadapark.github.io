@@ -219,6 +219,11 @@ header h4 {
     flex-wrap: wrap;
     width: 100%;
     align-items: flex-start;
+    height: 0;
+}
+
+.dp-carousel-board > .board-fullheight {
+    height: auto;
 }
 
 .dp-width__2 > * {
