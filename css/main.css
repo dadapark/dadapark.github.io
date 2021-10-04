@@ -53,6 +53,7 @@ h5 {
     font-size: 1.67rem;
     font-weight: 500;
     margin-bottom: 8px;
+    line-height: 2rem;
 }
 
 h6 {
@@ -355,4 +356,43 @@ header h4 {
 
 header.header-hide {
     display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    header h4 {
+        margin: 6px 16px;;
+    }
+
+    .dp-main {
+        margin: 56px 0;
+    }
+
+    .dp-component {
+        margin: 0 16px 60px;
+    }
+
+    .dp-carousel-nav > * {
+        padding: 0 20px;
+    }
+
+    .dp-width__2 > * {
+        width: 100%;
+        padding-top: 75%;
+        margin: 8px 0px;
+    }
+
+    .dp-width__3 > * {
+        width: calc(50% - 8px);
+        padding-top: calc(50% - 8px);
+        margin: 4px 4px;
+    }
+
+    .dp-modal-close {
+        padding: 16px;
+        width: 32px;
+    }
+
+    .dp-carousel-nav > * img {
+        
+    }
 }
