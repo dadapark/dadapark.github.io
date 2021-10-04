@@ -1,11 +1,11 @@
 @font-face {
   font-family: newyork;
-  src: url('../font/NewYorkSmall-semibold.ttf') format("truetype");
+  src: url('../font/NewYorkSmall-semibold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: rubik;
-  src: url('../font/Rubik-VariableFont_wght.ttf') format("truetype");
+  src: url('../font/Rubik-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
