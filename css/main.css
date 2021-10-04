@@ -392,7 +392,8 @@ header.header-hide {
         width: 32px;
     }
 
-    .dp-carousel-nav > * img {
-        
+    h1 {
+        font-size: 4rem;
+        line-height: 5rem;
     }
 }
