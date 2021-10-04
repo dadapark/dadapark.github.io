@@ -396,4 +396,8 @@ header.header-hide {
         font-size: 4rem;
         line-height: 5rem;
     }
+
+    .dp-carousel-board-item {
+        border-radius: 10px;
+    }
 }
