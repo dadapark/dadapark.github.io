@@ -350,7 +350,7 @@ header h4 {
 .dp-modal-close {
     width: auto;
     align-self: flex-end;
-    padding: 80px 160px 0 0;
+    padding: 40px;
     cursor: pointer;
 }
 
