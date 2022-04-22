@@ -52,9 +52,12 @@ let imgComp = document.createElement('img');
 [...modalButtons].forEach((modalButton) => {
     modalButton.addEventListener('click',
     () => {
-        if (modalButton.firstChild) {
-            imgComp.src = modalButton.firstChild.src.replace('thumb', 'original').replace('.gif', '.webp');
-            
+        if (modalButton.firstElementChild) {
+            if (modalButton.firstElementChild.src.includes('/3d/')) {
+                imgComp.src = modalButton.firstElementChild.src.replace('thumb', 'original').replace('.png', '.webp');
+            } else {
+                imgComp.src = modalButton.firstElementChild.src.replace('thumb', 'original').replace('.gif', '.webp');
+            }
             modalImage.appendChild(imgComp);
 
             bodyContent.classList.toggle('dp-lock');
