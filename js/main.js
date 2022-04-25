@@ -47,18 +47,37 @@ const switchNav = (button, i) => {
 });
 
 
-let imgComp = document.createElement('img');
-
 [...modalButtons].forEach((modalButton) => {
     modalButton.addEventListener('click',
     () => {
         if (modalButton.firstElementChild) {
-            if (modalButton.firstElementChild.src.includes('/3d/')) {
-                imgComp.src = modalButton.firstElementChild.src.replace('thumb', 'original').replace('.png', '.webp');
+            let imgList = document.createElement('div');
+            imgList.classList.add('imgs-containers');
+            if (modalButton.getAttribute('value')) {
+                let j = parseInt(modalButton.getAttribute('value'));
+                for (let i = 0; i <= j; i++) {
+                    let imgComp = document.createElement('img');
+                    if (i == j) {
+                        if (i < 10) {
+                            i = '0' + i;
+                        }
+                        imgComp.src = modalButton.firstElementChild.src.replace('thumb', 'original').replace('.png', '-' + i + '.webp');
+                        imgList.appendChild(imgComp)
+                    } else {
+                        if (i < 10) {
+                            i = '0' + i;
+                        }
+                        imgComp.src = modalButton.firstElementChild.src.replace('thumb', 'original').replace('.png', '-' + i + '.png');
+                        imgList.appendChild(imgComp)
+                    }
+                }
             } else {
+                let imgComp = document.createElement('img');
                 imgComp.src = modalButton.firstElementChild.src.replace('thumb', 'original').replace('.gif', '.webp');
+                imgList.appendChild(imgComp)
             }
-            modalImage.appendChild(imgComp);
+            
+            modalImage.appendChild(imgList);
 
             bodyContent.classList.toggle('dp-lock');
             modal.classList.toggle('dp-modal-show');
@@ -67,10 +86,12 @@ let imgComp = document.createElement('img');
     })
 });
 
+
 [...modalClose].forEach((closeButton) => {
     closeButton.addEventListener('click',
     () => {
-        modalImage.removeChild(imgComp);
+        console.log(modalImage)
+        modalImage.innerHTML = '';
 
         bodyContent.classList.toggle('dp-lock');
         modal.classList.toggle('dp-modal-show');

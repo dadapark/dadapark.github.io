@@ -332,6 +332,8 @@ header h4 {
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 0.3s;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 .dp-modal-content {
@@ -352,6 +354,16 @@ header h4 {
     align-self: flex-end;
     padding: 40px;
     cursor: pointer;
+}
+
+.imgs-containers {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgs-containers > * {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 header.header-hide {
