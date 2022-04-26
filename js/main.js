@@ -9,6 +9,18 @@ const modal = document.getElementsByClassName('dp-modal')[0];
 const modalClose = document.getElementsByClassName('dp-modal-close');
 const modalImage = document.getElementById('dp-modal-img');
 
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-65px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 // (i, int)
 const switchCarousel = (i) => {
     targetCarousel = document.getElementsByClassName("dp-carousel-board__" + i)[0]

@@ -89,6 +89,7 @@ header {
     background-color: #92CCF1;
     display: flex;
     z-index: 999999;
+    transition: top 0.3s;
 }
 
 header h4 {
