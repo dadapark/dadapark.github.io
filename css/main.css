@@ -107,9 +107,13 @@ header h4 {
 
 .dp-cta {
     align-self: flex-start;
-    background-color: #92CCF1;
-    color: #FFF;
-    padding: 18px 24px;
+    /* background-color: #92CCF1; */
+    background-color: #000;
+    /* border-width: 3px;
+    border-style: solid;
+    border-color: #0099e5; */
+    color: #fff;
+    padding: 12px 24px 12px 12px;
     border-radius: 8px 8px;
     margin: 27px 0;
 }
@@ -207,7 +211,7 @@ header h4 {
 .dp-carousel-board {
     display: flex;
     overflow: hidden;
-    width: 300%;
+    width: 200%;
     align-items: flex-start;
     will-change: transform;
     -webkit-transition: 1s ease-in-out;
