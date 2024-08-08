@@ -1,0 +1,180 @@
+:root {
+    --noodly-yellow: #FCBF49;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    font-family: sf-pro;
+    font-size: 18px;
+    color: #323336;
+}
+
+p {
+    /* font-size: 0.8rem; /*16*/
+    margin: 0.5rem 0 2rem;
+} 
+
+.p-bold {
+    font-weight: 700;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.4rem; /*idk*/
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    margin: 0 auto 50px;
+}
+
+h4 {
+    /* font-size: 0.8rem; 16 */
+    font-weight: 700;
+    margin: 0;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 0.85rem; /*17*/
+    margin:0;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 0.85rem;
+    margin: 0.5rem 0 2rem;
+    line-height: 1.3rem;
+}
+
+#noodly-header {
+    position: relative;
+    min-height: 300px;
+    background-image:url(../img/ui/noodly/header.png);
+    background-position: center;
+    margin-bottom: 100px;
+}
+
+#noodly-logo {
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+
+section {
+    display: block;
+    max-width: 1040px;
+    padding: 0 200px;
+    margin: 100px auto;
+}
+
+hr {
+    margin: 100px 0;
+    border-top: 1px solid #ddd;
+}
+
+#overview-flex {
+    display: flex;
+    
+}
+
+#overview-flex > div {
+    flex: 1;
+}
+
+#overview-flex > #summ-flex {
+    flex: 0 165px;
+    margin-right: 100px;
+}
+
+#process-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.process-card {
+    background-color: #fcfcfc;
+    position: relative;
+    text-align: center;
+    min-width: 250px;
+    margin: 0 15px 30px;
+    padding: 30px 0;
+    flex: 1;
+    box-shadow: 1px 3px 3px #00000015;
+    border-radius: 10px;
+    
+}
+
+.process-card img {
+    display: block;
+    margin: 10px auto 25px;
+}
+
+.process-card h1 {
+    color: var(--noodly-yellow);
+    margin-bottom: 1.2rem;
+    
+}
+
+ul {
+    padding: 0;
+    display: inline-block;
+    margin-top: 0;
+}
+
+li {
+    list-style-type: none;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.img-full {
+    max-width: 100%;
+    display: block;
+    margin: 40px auto 40px;
+}
+
+#color-box {
+    background-color: var(--noodly-yellow);
+}
+
+#wireframes-box {
+    /* background-color: var(--noodly-yellow); */
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+video {
+    display: block; 
+    margin: 0 auto 200px;
+    clip-path: inset(2px 2px);
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    #noodly-logo {
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #noodly-header {
+        margin-bottom: 40px;
+        min-height: 200px;
+    }
+
+    section {
+        display: block;
+        margin: auto;
+        padding: 0 40px;
+    }
+    
+}
+
