@@ -11,12 +11,7 @@ html, body {
 }
 
 p {
-    /* font-size: 0.8rem; /*16*/
-    margin: 0.5rem 0 2rem;
-} 
-
-.p-bold {
-    font-weight: 700;
+    margin: 0 0 40px;
 }
 
 h1 {
@@ -30,41 +25,50 @@ h1 {
 h4 {
     /* font-size: 0.8rem; 16 */
     font-weight: 700;
-    margin: 0;
+    margin: 0 0 0.8rem;
 }
 
 h5 {
     font-weight: 700;
-    font-size: 0.85rem; /*17*/
+    font-size: 0.8rem;
     margin:0;
 }
 
 h6 {
     font-weight: 400;
-    font-size: 0.85rem;
-    margin: 0.5rem 0 2rem;
+    font-size: 0.8rem;
+    margin: 0.5rem 0 0.7rem;
     line-height: 1.3rem;
 }
 
 #noodly-header {
     position: relative;
-    min-height: 300px;
     background-image:url(../img/ui/noodly/header.png);
     background-position: center;
-    margin-bottom: 100px;
+    min-height: 200px;
 }
 
 #noodly-logo {
     position: absolute;
-    bottom:0;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    top: 0;
+    bottom: 0;
     left: 0;
+    right: 0;
+    margin: auto;
 }
-
 section {
     display: block;
-    max-width: 1040px;
-    padding: 0 200px;
+    margin: auto;
+    padding: 0 20px;
     margin: 100px auto;
+}
+
+#top-section {
+    margin-top: 60px;
 }
 
 hr {
@@ -74,20 +78,27 @@ hr {
 
 #overview-flex {
     display: flex;
+    flex-wrap: wrap;
     
 }
 
-#overview-flex > div {
+#summ-flex {
+    display: flex;
     flex: 1;
+    justify-content: space-between;
 }
 
-#overview-flex > #summ-flex {
-    flex: 0 165px;
-    margin-right: 100px;
+#summ-flex > div {
+    margin: 0 5px;
+}
+
+#detail-flex {
+    margin-top: 40px;
 }
 
 #process-flex {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -95,13 +106,11 @@ hr {
     background-color: #fcfcfc;
     position: relative;
     text-align: center;
-    min-width: 250px;
     margin: 0 15px 30px;
     padding: 30px 0;
     flex: 1;
     box-shadow: 1px 3px 3px #00000015;
     border-radius: 10px;
-    
 }
 
 .process-card img {
@@ -144,37 +153,60 @@ li {
     color: #fff;
 }
 
+#wireframes-box h1 {
+    margin-bottom: 0;
+}
+
 video {
     display: block; 
+    width: 100%;
+    max-width: 600px;
     margin: 0 auto 200px;
     clip-path: inset(2px 2px);
 }
 
-
-
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) {
     #noodly-logo {
-        max-height: 100%;
-        max-width: 100%;
-        width: auto;
-        height: auto;
-        top: 0;
-        bottom: 0;
+        position: absolute;
+        bottom:0;
         left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    #noodly-header {
-        margin-bottom: 40px;
-        min-height: 200px;
+        top: auto;
+        right: auto;
     }
 
     section {
-        display: block;
-        margin: auto;
         padding: 0 40px;
+        max-width: 1040px;
     }
-    
-}
 
+    #top-section {
+        margin-top: 100px;
+    }
+
+    #overview-flex > div{
+        flex: 1;
+    }
+
+    #overview-flex > #summ-flex {
+        flex-direction: column;
+        justify-content: left;
+        flex: 0 10vw;
+        margin-right: 100px;
+    }
+
+    #summ-flex h6 {
+        margin-bottom: 40px;
+    }
+
+    #detail-flex {
+        margin-top: 0;
+    }
+
+    #process-flex {
+        flex-direction: row;
+    }
+
+    .process-card {
+        max-width: 250px;
+    }
+}

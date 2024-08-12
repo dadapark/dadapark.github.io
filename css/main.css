@@ -164,7 +164,7 @@ header h4 {
 
 .dp-carousel-navbar {
     border-bottom: 4px solid;
-    border-bottom-color: hsl(203, 77%, 76%);
+    border-bottom-color: #D1EDFF;
     position: relative;
     will-change: transform, border-bottom-color;
     -webkit-transition: 1s ease-in-out;
@@ -178,7 +178,7 @@ header h4 {
     height: 16px;
     border: 12px solid #FFF;
     border-radius: 50% 50%;
-    background-color: #92CCF1;
+    background-color: #D1EDFF;
     position: absolute;
     top: -18px;
     will-change: transform, background-color;
@@ -189,19 +189,19 @@ header h4 {
 }
 
 .dp-carousel-navbar.navbar-red {
-    border-bottom-color: #F58989;
+    border-bottom-color: #FFDCCE;
 }
 
 .dp-carousel-navbar.navbar-red .dp-carousel-navbar-circle {
-    background-color: #F58989;
+    background-color: #FFDCCE;
 }
 
 .dp-carousel-navbar.navbar-yellow {
-    border-bottom-color: #F2D261;
+    border-bottom-color: #FFF1BB;
 }
 
 .dp-carousel-navbar.navbar-yellow .dp-carousel-navbar-circle {
-    background-color: #F2D261;
+    background-color: #FFF1BB;
 }
 
 
