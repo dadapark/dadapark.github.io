@@ -374,6 +374,11 @@ header h4 {
     margin: 0 auto;
 }
 
+.imgs-containers > spline-viewer {
+    max-width: none;
+}
+
+
 header.header-hide {
     display: none;
 }
@@ -419,5 +424,9 @@ header.header-hide {
 
     .dp-carousel-board-item {
         border-radius: 10px;
+    }
+
+    .imgs-containers > spline-viewer {
+        height: 100vw;
     }
 }

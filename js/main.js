@@ -83,6 +83,11 @@ const switchNav = (button, i) => {
                         imgList.appendChild(imgComp)
                     }
                 }
+            } else if (modalButton.getAttribute('data-type') === "code") {
+                console.log('code opened')
+                let splineComp = document.createElement('spline-viewer');
+                splineComp.url = "https://prod.spline.design/" + modalButton.getAttribute('data-spline') + "/scene.splinecode";
+                imgList.appendChild(splineComp);
             } else {
                 let imgComp = document.createElement('img');
                 imgComp.src = modalButton.firstElementChild.src.replace('thumb', 'original').replace('.gif', '.webp');
